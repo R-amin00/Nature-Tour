@@ -170,17 +170,17 @@ body{
     margin-top:100px ;
 }
 
-.sub-head-heading{
+.main-heading{
     text-align:center;
     text-transform: uppercase;
     background: linear-gradient(to right bottom, rgba(138, 235, 83, 0.801), rgba(15, 131, 44, 0.801));
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 } 
 
 .container{
-  margin-top: 20px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
