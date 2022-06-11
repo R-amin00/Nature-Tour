@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: gray;
+    padding: 30px;
+}
+
+.header{
+    height: 90vh;
+    background: linear-gradient(to right bottom, rgba(121, 216, 67, 0.801), rgba(4, 163, 44, 0.801)), url(./Images/header.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+
+    clip-path: polygon(0 0 , 100% 0, 100% 80%, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+
+}
+.logo{
+    width: 100px;
+}
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.heading-primary{
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2em;
+    
+    
+}
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    letter-spacing: 30px;
+    font-weight: 500;
+
+    animation: moveInleft 1s ease-out;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 13px;
+    font-weight: 400;
+
+    animation: moveInRight 1s ease-out;
+}
+
+
+@keyframes moveInleft{
+    0%{
+        opacity: 0;
+        transform: translatex(-100%)
+    }
+    80%{
+        transform:translate(-10px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0)
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translatex(100%)
+    }
+    80%{
+        transform:translate(-10px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0)
+    }
+}
+
+@keyframes moveBtnDown{
+    0%{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    100%{
+        opacity:1;
+        transform:translate(0)
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: inline-block;
+    position: relative;
+    transition: all .2s;
+}
+
+.btn:hover{
+    transform: scaleY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0, 0, .2);
+}
+.btn:active{
+    transform: scaleY(-1px);
+    box-shadow: 0 5px 20px rgba(0,0, 0, .2);
+}
+.btn-white{
+    color: gray;
+    background: white;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+
+}
+.btn-white::after{
+    background: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated{
+    animation: moveBtnDown .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
+}
+
+
+
+
+/*------Extra----*/
+
+.hero{
+    margin-top:100px ;
+}
+
+.container{
+  margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.up-head{
+    text-align:center;
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, rgba(138, 235, 83, 0.801), rgba(15, 131, 44, 0.801));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+} 
+
+.left{
+    left: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.adventure{
+    line-height: 4em;
+}
+
+.head{
+    font-size: 18px;
+    color: rgb(109, 108, 108);
+    text-transform: uppercase;
+}
+
+.adventure p{
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.left-arrow{
+    color: rgb(31, 241, 31);
+
+}
+
+.imu{
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+}
+
+.imu:hover{
+    box-shadow: 0 0 20px rgba(0,0, 0, 1);
+    border: 5px solid green;
+    
+}
