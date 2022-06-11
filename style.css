@@ -166,7 +166,7 @@ body{
 
 /*------Extra----*/
 
-.hero{
+.sub-head{
     margin-top:100px ;
 }
 
@@ -178,7 +178,7 @@ body{
 
 
 
-.up-head{
+.sub-head-heading{
     text-align:center;
     text-transform: uppercase;
     background: linear-gradient(to right bottom, rgba(138, 235, 83, 0.801), rgba(15, 131, 44, 0.801));
